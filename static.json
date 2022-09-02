@@ -1,5 +1,5 @@
 {
-    "root": "uas80",
+    "root": "Uas80",
     "clean_urls" : true,
     "https_only":true,
     "error_page": "eror.html",
