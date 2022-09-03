@@ -8,7 +8,7 @@
                 <div class="card-header">EDIT DATA</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{route('akademik.update',$data['id_mhs'])}}">
+                    <form method="POST" action="{{route('update',$data['id_mhs'])}}">
                         @csrf
                         @method('PUT')
                         <legend>

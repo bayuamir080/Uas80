@@ -8,7 +8,7 @@
                 <div class="card-header">TAMBAH DATA MAHASISWA</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{route('akademik.store')}}">
+                    <form method="POST" action="/store">
                         @csrf
                         @method('PUT')
                         <legend>

@@ -17,7 +17,7 @@ class AkademikController extends Controller
     public function index()
     {
         $mahasiswa = Akademik::all();
-        return view('indexakademik', compact('mahasiswa'));
+        return view('welcome', compact('mahasiswa'));
     }
 
     /**
@@ -40,7 +40,7 @@ class AkademikController extends Controller
     public function store(Request $request)
     {
         Akademik::create($request->all());
-        return redirect()->route('akademik');
+        return redirect()->route('/');
     }
 
     /**
@@ -83,7 +83,7 @@ class AkademikController extends Controller
                 'jenis_kelamin' => $request['jenis_kelamin'],
                 'alamat' => $request['alamat']
             ]);
-        return redirect()->route('akademik');
+        return redirect()->route('/');
     }
 
     /**
@@ -96,6 +96,6 @@ class AkademikController extends Controller
     {
         $data = Akademik::where('id_mhs', $id)
             ->delete();
-        return redirect()->route('akademik');
+        return redirect()->route('/');
     }
 }

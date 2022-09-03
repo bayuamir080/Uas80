@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     <a href="{{route('matkul.tambah')}}" class="btn btn-primary">Tambah</a>
-                    <a href=/akademik class="btn btn-primary">Mahasiswa</a>
+                    <a href=/ class="btn btn-primary">Mahasiswa</a>
 
                     <br />
                     <br />
